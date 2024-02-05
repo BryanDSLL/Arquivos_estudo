@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let</title>
+</head>
+<script>
+    var pergunta;
+    var nrJogador;
+    var nrTentativa;
+
+    function perguntar() {
+        for (let nrJogador = 1; nrJogador < 4; nrJogador++) {
+            alert("Jogador " + nrJogador + ". Vamos começar!");
+
+            for (let nrTentativa = 1; nrTentativa < 3; nrTentativa++) {
+                pergunta = prompt("Tentativa " + nrTentativa + ". Qual o nome do meio do Ronaldo Fenômeno?");
+                if (pergunta === "Nazário") {
+                    alert ("Parabéns!!!! Você acertou!")
+                    nrTentativa = 3;
+                }else {
+                    alert ("Você errou! Tem mais " + (2 - nrTentativa) + " tentativa!")
+                }
+            }
+        }
+    }
+
+    perguntar();
+
+</script>
+
+<body>
+
+</body>
+
+</html>

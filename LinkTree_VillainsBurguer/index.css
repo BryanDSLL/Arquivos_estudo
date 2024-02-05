@@ -1,0 +1,100 @@
+@font-face {
+    font-family: RussoOne;
+    src: url(../LinkTree_VillainsBurguer/Fontes/RussoOne-Regular.ttf);
+}
+
+body {
+    margin: 0px;
+    display: grid;
+    background-image: linear-gradient( to right, rgb(90, 13, 13), rgb(0, 0, 0));   
+}
+
+#btn {
+    width: 300px;
+    height: 111px;
+    text-align: center;
+    align-items: center;
+    place-self: center;
+    
+}
+
+#btnZap {
+    display: inline-block;
+    width: 300px;
+    height: 64px;
+    text-decoration: none;
+    place-self: center;
+    background-color: rgb(58, 160, 11);
+    background-image: linear-gradient( 30deg, rgb(58, 160, 11), rgb(9, 20, 4));
+    margin-top: 250px;
+    border-radius: 3rem;
+    border: solid 2px rgb(187, 173, 173);
+}
+
+#btnZap:hover {
+    animation: animacao-botao 1s ease-out;
+}
+
+
+#box {
+    display: inline-block;
+    font-family: RussoOne;
+    color: black;
+    height: 150px;
+    font-size: 25px;    
+    margin-top: 20px;
+    border-radius: 0.7rem;
+}
+
+#boxZap {
+    display: flex;
+    font-family: RussoOne;
+    color: black;
+    height: 150px;
+    font-size: 25px;    
+}
+
+
+#box img {
+width: 140px;
+}
+
+#boxZap img {
+    width: 65px;
+    height: 65px;
+    margin-right: 40px;
+    }
+
+#boxZap p {
+    font-size: 25px;
+}
+
+p {
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+    text-shadow: 0.09em 0.09em 0.09em 0.09em rgb(51, 48, 48);
+}
+
+img {
+    border-radius: 0.7rem;
+}
+
+
+@keyframes animacao-botao {
+ 0% {
+    transform: translateY(0px);
+ }
+ 
+ 25% {
+    transform: translateY(-15px);
+ }
+ 
+ 50% {
+    transform: translateY(15px);
+ }
+ 
+ 100% {
+    transform: translateY(0px);
+ }
+
+}

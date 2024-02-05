@@ -1,0 +1,44 @@
+* {
+    background-color: darkgray;
+    text-align: center;
+}
+
+ol, ul {
+    color: white;
+    background-color: black;
+    width: 150px;
+    display: inline-block;
+    outline: auto;
+    outline-style: dashed;
+    text-align: center;
+}
+
+li {
+    background-color: black;
+}
+
+h1 {
+    outline-style: groove;
+}
+
+.linguagens {
+    font-style: italic;
+}
+
+textarea {
+    resize: none;
+    font-size: small;
+    text-align: start;
+    height: 100px;
+    width: 700px;
+}
+
+a {
+    font-size: large;
+    width: 100%;
+    height:22px; 
+    color:blueviolet;
+    background-color: black;
+    position: sticky;
+    bottom: 0px;   
+}

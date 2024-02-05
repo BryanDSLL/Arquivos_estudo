@@ -1,0 +1,142 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+@font-face {
+    font-family: RussoOne;
+    src: url(../Prova/Fontes/RussoOne-Regular.ttf);
+}
+
+body {
+    margin: 0px;
+    display: grid;
+    background-image: linear-gradient( to right, rgb(3, 121, 248), rgb(170, 215, 255));  
+
+
+.column:hover {
+    animation: animacao-cartao 1s ease-in forwards;
+}
+
+.column::before {
+    background-color: #adadad;
+}
+
+#subtopo {
+    font-size: 22px;
+    margin-left: 340px;
+    margin-right: 340px;
+    margin-bottom: 4px;
+    border-radius: 0.7rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 2px 2px #adadad;
+   
+}
+
+#subtopo::first-letter {
+    font-size: 28px;
+}
+
+.topo {
+    display: inline-block;
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: RussoOne;
+    color: black;
+    font-size: 35px;
+    text-shadow: 0.09em 0.09em rgb(168, 156, 156);
+}
+
+.topo::first-letter {
+    color: rgb(2, 2, 246);
+    font-size: 45px;
+}
+
+.nav {
+    display: inline-block;
+    margin-top:-8px;
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+#backlink {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 3px;
+    color: black;
+    background-color: rgb(108, 238, 255);
+    border-radius: 0.2rem;
+    font-family: RussoOne;
+}
+
+#backlink:hover {
+    animation: animacao-backlink 1s ease-out;
+}
+
+#empresa {
+    text-align: center;
+    align-self: center;
+}
+
+>input, textarea, select {
+    display: block;
+    margin-bottom: 10px;
+}
+
+>input[type=radio],
+>input[type=checkbox] {
+    display: inline;
+}
+
+#formulario {
+    display: inline-block;
+    background-color: rgb(207, 240, 255);
+    width: 100%;
+    border-radius: 0.8rem;
+}
+
+#formulario * {
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 0.6rem;
+}
+
+#promo {
+    font-size: 15px;
+    font-style: oblique;
+    font-family: RussoOne;
+}
+
+@keyframes animacao-cartao {
+    0% {
+       transform: scale(100%);
+    }
+    
+    70% {
+        transform: scale(110%);
+     }
+    
+    100% {
+       transform: scale(110%);
+    }
+   
+   }
+
+   @keyframes animacao-backlink {
+    0% {
+       transform: translateX(0px);
+    }
+    
+    25% {
+       transform: translateX(-15px);
+    }
+    
+    50% {
+       transform: translateX(15px);
+    }
+    
+    100% {
+       transform: translateX(0px);
+    }
+   
+   }
+}

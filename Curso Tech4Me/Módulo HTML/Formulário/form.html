@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="http://localhost:3003/alunos" method="GET">
+        <input type="text" name="nome" placeholder="Nome">
+        <input type="password" name="senha" placeholder="Senha"> 
+        <label for="documento">CPF ou CNPJ</label>
+        <input type="text" name="cpfCnpj">
+        <textarea name="descricao" cols="30" rows="10"></textarea>
+        <div>
+            <input type="radio" name="tipo" checked="fem"> Feminino
+            <input type="radio" name="tipo" value="masc"> Masculino
+        </div>
+        
+        <div>
+            <label for="idade">Qual a sua idade?</label>
+            <input type="number" name="idade" placeholder="IDADE">
+        </div>
+        <div>
+            <input type="checkbox" name="atleta" value="atleta"> Atleta
+        </div>
+        <div>
+            <select name="estado" required>
+                <option value="">None</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="ba">Bahia</option>
+                <option value="ce">Ceará</option>
+            </select>
+        </div>
+        <div>
+            <select name="estados" multiple size="3">
+                <option value="rj">Rio de Janeiro</option>
+                <option value="ba">Bahia</option>
+                <option value="ce">Ceará</option>
+            </select>
+        </div>
+        <button formaction="http://localhost:3003/alunos">Matricular</button>
+        <button formaction="http://localhost:3003/alunos/3">Alterar Matricula</button>
+        <button type="submit">Matricular</button> <br>
+        <button onclick="alert('Ola mundo')">Clique-me></button>
+    </form>
+</body>
+</html>
+
+<style>
+    input, textarea, select {
+        display: block;
+        margin-bottom: 10px;
+    }
+    input[type=radio],
+    input[type=checkbox] {
+        display: inline;
+    }
+</style>

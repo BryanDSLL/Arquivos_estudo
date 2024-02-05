@@ -1,0 +1,172 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+@font-face {
+    font-family: RussoOne;
+    src: url(../Prova/Fontes/RussoOne-Regular.ttf);
+    }
+
+* {
+    font-family: RussoOne;
+}
+
+body {
+    margin: 0px;
+    display: grid; 
+    background-image: linear-gradient( to right, rgb(3, 121, 248), rgb(170, 215, 255)); 
+}
+
+
+.topo {
+    height: 20px;
+    display: inline-block;
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: RussoOne;
+    color: black;
+    font-size: 35px;
+    text-shadow: 0.09em 0.09em rgb(168, 156, 156);
+}
+
+.topo::first-letter {
+    color: rgb(2, 2, 246);
+    font-size: 45px;
+}
+
+.nav {
+    display: inline-block;
+    margin-top:-8px;
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+.content {
+    background-color: white;
+    display: flex;
+    height: calc(100vh - 20px);
+    width: 100%;
+    padding: 0 5%;
+    text-align: center;
+    align-items: center;
+    place-self: center;
+}
+
+.left-side {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    color: black;
+    
+}
+
+.left-side p {
+    font-size: 15px;
+}
+
+.left-side h1 {
+    margin-bottom: 40px;
+}
+
+.left-side span {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.left-side a {
+    color: white;
+    background-color: #00C0AF;
+    width: fit-content;
+    border: 0px;
+    padding: 10px 20px;
+    border-radius: 0.6rem;
+    text-align: center;
+    align-items: center;
+    place-self: center;
+    animation: animacao-botao 1s ease-in infinite;
+}
+
+.right-side {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagem:hover {
+    animation: animacao-img 1s ease-in forwards;
+}
+
+
+#backlink {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 3px;
+    color: black;
+    background-color: rgb(108, 238, 255);
+    border-radius: 0.2rem;
+    font-family: RussoOne;
+    text-decoration: none;
+}
+
+#backlink:hover {
+    animation: animacao-backlink 1s ease-out;
+}
+
+#empresa {
+    text-align: center;
+    align-self: center;
+}
+
+@keyframes animacao-backlink {
+    0% {
+       transform: translateX(0px);
+    }
+    
+    25% {
+       transform: translateX(-15px);
+    }
+    
+    50% {
+       transform: translateX(15px);
+    }
+    
+    100% {
+       transform: translateX(0px);
+    }
+   
+   }
+
+   @keyframes animacao-img {
+    0% {
+       transform: scale(100%);
+    }
+    
+    70% {
+        transform: scale(140%);
+     }
+    
+    100% {
+       transform: scale(140%);
+    }
+}
+
+@keyframes animacao-botao {
+    0% {
+       transform: scale(100%);
+    }
+    
+    50% {
+        transform: scale(120%);
+     }
+    
+    100% {
+       transform: scale(100%);
+    }
+}

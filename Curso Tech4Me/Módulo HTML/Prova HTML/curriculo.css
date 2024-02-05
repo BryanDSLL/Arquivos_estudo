@@ -1,0 +1,50 @@
+* {
+    background-color: darkgray;
+}
+
+img {
+    width: 140px;
+    height: 140px;
+}
+
+p {
+    font-size: larger;
+}
+
+h3 {
+    outline-style: double;
+}
+
+table *{
+    border: 1px solid black;
+    background-color: white;
+}
+
+table {
+    background-color: white;
+}
+
+.container {
+    align-items: start;
+    display:flex;
+    text-indent: 30px;    
+}
+
+.endereco *{
+    font-weight: 600;
+    font-size: small;
+    outline: auto;
+    outline-offset: 4px;
+    outline-color: black;
+    background-color: white;
+}
+
+a {
+    width: 100%;
+    height:22px; 
+    color:blueviolet;
+    background-color: black;
+    position: sticky;
+    bottom: 0px;   
+}
+

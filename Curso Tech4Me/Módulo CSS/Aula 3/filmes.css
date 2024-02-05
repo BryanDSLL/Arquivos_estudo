@@ -1,0 +1,10 @@
+* {
+    background-image: cross-fade(red, blue, 50%);
+}
+
+img {
+    display: flexbox;
+    padding: 5px;
+    margin: 5px;
+    outline-style: dotted;
+}

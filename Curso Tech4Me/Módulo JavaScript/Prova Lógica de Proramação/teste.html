@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+
+let alunos = [
+    { nome: "Bryan", modulo: "JavaScript", nota_4: 3.5, nota_6: 5 },
+    { nome: "Gaby", modulo: "HTML", nota_4: 4, nota_6: 6 },
+    { nome: "Pedro", modulo: "JavaScript", nota_4: 1.5, nota_6: 4 },
+    { nome: "Ana", modulo: "CSS", nota_4: 2, nota_6: 3 },
+    { nome: "Marcos", modulo: "JavaScript", nota_4: 2, nota_6: 3 },
+  ];
+
+  function calculaMedia(aluno) {
+    let media = (aluno.nota_4 + aluno.nota_6);
+    return media;
+}
+
+function relatorioNotas(alunos) {
+  for (let aluno of alunos) {
+    console.log("Aluno: " + aluno.nome + " - Módulo: " + aluno.modulo + " - Nota (4): " + aluno.nota_4 + " - Nota (6): " + aluno.nota_6);
+  }
+}
+
+function alunoComMaiorNota(alunos) {
+    let alunoComMaiorNota = alunos[0];
+    for (let aluno of alunos) {
+        if (calculaMedia(aluno) > calculaMedia(alunoComMaiorNota)) {
+            alunoComMaiorNota = aluno;
+        }
+    }
+    return alunoComMaiorNota;
+}
+
+function alunosAbaixoDaMedia(alunos) {
+    let contador = 0;
+    for (let aluno of alunos) {
+        if (calculaMedia(aluno) < 7) {
+            contador++;
+        }
+    }
+    return contador;
+}
+
+relatorioNotas(alunos);
+console.log("Aluno com maior nota:", alunoComMaiorNota(alunos).nome);
+console.log("Alunos abaixo da média:", alunosAbaixoDaMedia(alunos));
+
+
+</script>
+
+<body>
+    
+</body>
+</html>

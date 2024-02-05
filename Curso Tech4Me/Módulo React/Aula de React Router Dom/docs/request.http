@@ -1,0 +1,8 @@
+POST https://64cc440c2eafdcdc8519bbb8.mockapi.io/filmes
+Content-Type: application/json
+
+{"titulo":"Maze Runner",
+"genero":"Ação",
+"ano":2014,
+"descricao":"Maze Runner é uma trilogia cinematográfica norte-americana, composta por filmes distópicos de ação e aventura de ficção científica baseados nos livros de Maze Runner do autor americano James Dashner.",
+"poster":"https://edu.ieee.org/br-ufcgras/wp-content/uploads/sites/243/Maze-Runner-scaled.jpg"}

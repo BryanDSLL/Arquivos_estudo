@@ -1,0 +1,81 @@
+@font-face {
+    font-family: RussoOne;
+    src: url(../Prova/Fontes/RussoOne-Regular.ttf);
+}
+
+body {
+    margin: 0px;
+    display: grid;
+    background-image: linear-gradient( to right, rgb(3, 121, 248), rgb(170, 215, 255));   
+}
+
+#btn {
+    width: 300px;
+    height: 111px;
+    text-align: center;
+    align-items: center;
+    place-self: center;
+    background-color: rgb(221, 254, 255);
+    margin-top: 70px;
+    border-radius: 0.7rem;
+    border: solid 2px grey;
+}
+
+#box {
+    display: inline-flex;
+    font-family: RussoOne;
+    color: black;
+    font-size: 25px;
+    text-shadow: 0.09em 0.09em rgb(168, 156, 156); 
+}
+
+#btn:hover {
+    animation: animacao-botao 1s ease-out;
+}
+
+#box img {
+width: 140px;
+
+border-radius: 0.7rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#topo {
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: RussoOne;
+    background-color: white;
+    color: black;
+    font-size: 35px;
+    text-shadow: 0.09em 0.09em rgb(168, 156, 156);
+    box-shadow: 0px 4px 0px #adadad;
+}
+
+#topo::first-letter {
+    color: rgb(2, 2, 246);
+    font-size: 45px;
+}
+
+@keyframes animacao-botao {
+ 0% {
+    transform: translateY(0px);
+ }
+ 
+ 25% {
+    transform: translateY(-15px);
+ }
+ 
+ 50% {
+    transform: translateY(15px);
+ }
+ 
+ 100% {
+    transform: translateY(0px);
+ }
+
+}
